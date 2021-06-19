@@ -6,9 +6,13 @@ terraform {
     }
   }
 }
+provider "azurerm" {
 
- provider "azurerm" {
- features {}
+  version = ">=1.0.0"
+  alias = "jenkinsvm"
+
+  subscription_id = var.subscription_id
+  tenant_id       = var.tenant_id  
 }
 
  resource "azurerm_resource_group" "test" {

@@ -1,6 +1,15 @@
 variable "rgname"{
+
 type = string
 default = "jenkinsRG9"
+}
+variable "subscription_id"{
+    type = string
+    default = "100ae642-e20d-4249-a31c-f146f689acff"
+}
+variable "tenant_id"{
+    type = string
+    default = "8d7e3d37-9683-4334-8909-f9fff8deae34"
 }
 
 variable "location"{
