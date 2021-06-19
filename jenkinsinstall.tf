@@ -7,8 +7,6 @@ terraform {
   }
 }
 provider "azurerm" {
-
-  version = ">=1.0.0"
   alias = "jenkinsvm"
 
   subscription_id = var.subscription_id
