@@ -2,21 +2,17 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "1.0.0"
+      version = "=2.46.0"
     }
-    #backend "azurerm" {
-    #resource_group_name  = "rg-terraformstate"
-    #storage_account_name = "terrastatestorage21345"
-    #container_name       = "terraformdemo"
-    #key                  = "dev.terraform.tfstate"
-  }
   }
 }
+    
 provider "azurerm" {
-  alias = "jenkinsvm"
+features {}
+alias = "jenkinsvm"
 
-  subscription_id = var.subscription_id
-  tenant_id       = var.tenant_id  
+subscription_id = var.subscription_id
+tenant_id       = var.tenant_id  
 }
 
  resource "azurerm_resource_group" "test" {
