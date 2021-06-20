@@ -22,7 +22,7 @@ variable "client_id"{
 }
 variable "location"{
 type =  string
-default = "eastus2"
+default = "westus"
 }
 
 variable "vnet"{
@@ -48,5 +48,5 @@ variable "storage_container"{
 }
 variable "virtual_machine"{
     type = string
-    default = "jenkinsvm"
+    default = "jenkinsvm3"
 }
