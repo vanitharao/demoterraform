@@ -1,19 +1,6 @@
 
 
 # We strongly recommend using the required_providers block to set the
-# Azure Provider source and version being used
-terraform {
-  required_providers {
-      #azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "=2.46.0"
-      subscription_id = "100ae642-e20d-4249-a31c-f146f689acff"
-      client_id       = "0b96ff8d-ebe3-42bf-8ee3-6ded6789b8a1"
-      client_secret   = "61fed4b2-acdc-4002-a108-5aa97aaf572a"
-      tenant_id       = "8d7e3d37-9683-4334-8909-f9fff8deae34"
-    
-  }
-
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
