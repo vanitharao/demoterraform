@@ -35,7 +35,7 @@ variable "subnet"{
 }
 variable "network_interface"{
     type = string
-    default = "jenkinsnic"
+    default = "jenkinsnic2"
 }
 variable "storage_account"{
     type = string
@@ -44,7 +44,7 @@ variable "storage_account"{
 
 variable "storage_container"{
     type = string
-    default = "jenkinscontainername"
+    default = "jenkinscontainername2"
 }
 variable "virtual_machine"{
     type = string
