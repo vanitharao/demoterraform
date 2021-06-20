@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "1.0.0"
+      version = "=1.0.0"
     }
   }
 }
@@ -10,7 +10,6 @@ terraform {
 provider "azurerm" {
 features {}
 alias = "jenkinsvm"
-
 subscription_id = var.subscription_id
 tenant_id       = var.tenant_id  
 }
