@@ -4,7 +4,7 @@
 # Azure Provider source and version being used
 terraform {
   required_providers {
-      azurerm = {
+      #azurerm = {
       source  = "hashicorp/azurerm"
       version = "=2.46.0"
       subscription_id = "100ae642-e20d-4249-a31c-f146f689acff"
@@ -13,7 +13,7 @@ terraform {
       tenant_id       = "8d7e3d37-9683-4334-8909-f9fff8deae34"
     
   }
-}
+
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
