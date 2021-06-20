@@ -7,10 +7,10 @@ terraform {
       azurerm = {
       source  = "hashicorp/azurerm"
       version = "=2.46.0"
-      subscription_id = var.subscription_id
-      client_id       = var.client_id
-      client_secret   = var.client_secret
-      tenant_id       = var.tenant_id
+      subscription_id = "100ae642-e20d-4249-a31c-f146f689acff"
+      client_id       = "0b96ff8d-ebe3-42bf-8ee3-6ded6789b8a1"
+      client_secret   = "61fed4b2-acdc-4002-a108-5aa97aaf572a"
+      tenant_id       = "8d7e3d37-9683-4334-8909-f9fff8deae34"
     
   }
 }

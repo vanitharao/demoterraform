@@ -16,6 +16,10 @@ variable "client_secret"{
     type = string
     default = "61fed4b2-acdc-4002-a108-5aa97aaf572a"
 }
+variable "client_id"{
+    type = string
+    default = "0b96ff8d-ebe3-42bf-8ee3-6ded6789b8a1"
+}
 variable "location"{
 type =  string
 default = "eastus2"
