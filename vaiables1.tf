@@ -12,6 +12,10 @@ variable "tenant_id"{
     default = "8d7e3d37-9683-4334-8909-f9fff8deae34"
 }
 
+variable "client_secret"{
+    type = string
+    default = "61fed4b2-acdc-4002-a108-5aa97aaf572a"
+}
 variable "location"{
 type =  string
 default = "eastus2"
