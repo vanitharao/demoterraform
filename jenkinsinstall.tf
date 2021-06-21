@@ -115,7 +115,7 @@ resource "azurerm_virtual_machine" "test" {
 #   tags = {
 #     environment = "Dev"
 #   }
-# }
+# }   
 
 
 
