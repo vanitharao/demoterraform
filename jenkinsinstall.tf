@@ -54,6 +54,7 @@ resource "azurerm_storage_account" "test" {
     environment = "dev"
   }
 }
+ 
 
 resource "azurerm_storage_container" "test" {
   name                  = var.storage_container
