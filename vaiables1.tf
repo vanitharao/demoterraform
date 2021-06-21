@@ -1,11 +1,28 @@
 variable "rgname"{
+
 type = string
 default = "jenkinsRG10"
 }
+variable "subscription_id"{
+    type = string
+    default = "100ae642-e20d-4249-a31c-f146f689acff"
+}
+variable "tenant_id"{
+    type = string
+    default = "8d7e3d37-9683-4334-8909-f9fff8deae34"
+}
 
+variable "client_secret"{
+    type = string
+    default = "Aa-Wc8xevW2.QtWN-s3KTQ1cLTjC-iu_7r"
+}
+variable "client_id"{
+    type = string
+    default = "0b96ff8d-ebe3-42bf-8ee3-6ded6789b8a1"
+}
 variable "location"{
 type =  string
-default = "eastus2"
+default = "westus"
 }
 
 variable "vnet"{
@@ -18,7 +35,7 @@ variable "subnet"{
 }
 variable "network_interface"{
     type = string
-    default = "jenkinsnic"
+    default = "jenkinsnic2"
 }
 variable "storage_account"{
     type = string
@@ -27,7 +44,11 @@ variable "storage_account"{
 
 variable "storage_container"{
     type = string
+<<<<<<< HEAD
     default = "jenkinscontainername3"
+=======
+    default = "jenkinscontainername2"
+>>>>>>> 640a7fdda82e0fcb300743cc0cf6817f9586ebfa
 }
 variable "virtual_machine"{
     type = string

@@ -1,23 +1,20 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "2.62.0"
-    }
-  }
-}
 
- provider "azurerm" {
- features {}
+
+# We strongly recommend using the required_providers block to set the
+
+# Configure the Microsoft Azure Provider
+provider "azurerm" {
+  features {}
+
+  subscription_id = var.subscription_id
+  client_id       = var.client_id
+  client_secret   = var.client_secret
+  tenant_id       = var.tenant_id
 }
 
  resource "azurerm_resource_group" "test" {
   name     = var.rgname
  location = var.location
-}
-
-data "azurerm_resources" "test" {
-  resource_group_name = var.rgname
 }
 
 resource "azurerm_virtual_network" "test" {
@@ -100,25 +97,25 @@ resource "azurerm_virtual_machine" "test" {
   }
 }
 
-resource "azurerm_virtual_machine_extension" "test" {
-  name                 = "jenkinsExtensionnew"
-  virtual_machine_id   = azurerm_virtual_machine.test.id
-  publisher            = "Microsoft.Azure.Extensions"
-  type                 = "CustomScript"
-  type_handler_version = "2.0"
+# resource "azurerm_virtual_machine_extension" "test" {
+#   name                 = "jenkinsExtensionnew"
+#   virtual_machine_id   = azurerm_virtual_machine.test.id
+#   publisher            = "Microsoft.Azure.Extensions"
+#   type                 = "CustomScript"
+#   type_handler_version = "2.0"
 
- # settings = <<SETTINGS
-   # {
-       # "commandToExecute": "sudo install git -Command \"sudo install jdk\" -Command \"sudo apt install openjdk-8-jdk\" - Command \"sudo apt update\" - Command \"wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -\" -Command \"sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-#\" -Command \"sudo apt update\" -Command \"sudo apt install jenkins\" -Command \"systemctl status jenkins\" -Command \"sudo ufw allow 8080\" -Command \"sudo ufw status\""
-   # }
-#SETTINGS
+#  # settings = <<SETTINGS
+#    # {
+#        # "commandToExecute": "sudo install git -Command \"sudo install jdk\" -Command \"sudo apt install openjdk-8-jdk\" - Command \"sudo apt update\" - Command \"wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -\" -Command \"sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+# #\" -Command \"sudo apt update\" -Command \"sudo apt install jenkins\" -Command \"systemctl status jenkins\" -Command \"sudo ufw allow 8080\" -Command \"sudo ufw status\""
+#    # }
+# #SETTINGS
 
 
-  tags = {
-    environment = "Production"
-  }
-}
+#   tags = {
+#     environment = "Dev"
+#   }
+# }
 
 
 
