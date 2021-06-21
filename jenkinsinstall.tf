@@ -56,6 +56,7 @@ resource "azurerm_storage_account" "test" {
 }
  
 
+
 resource "azurerm_storage_container" "test" {
   name                  = var.storage_container
   storage_account_name  = azurerm_storage_account.test.name
