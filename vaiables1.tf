@@ -1,6 +1,6 @@
 variable "rgname"{
 type = string
-default = "jenkinsRG9"
+default = "jenkinsRG10"
 }
 
 variable "location"{
@@ -22,14 +22,14 @@ variable "network_interface"{
 }
 variable "storage_account"{
     type = string
-    default = "jenkinsstoragename1"
+    default = "jenkinsstoragename2"
 }
 
 variable "storage_container"{
     type = string
-    default = "jenkinscontainername"
+    default = "jenkinscontainername3"
 }
 variable "virtual_machine"{
     type = string
-    default = "jenkinsvm"
+    default = "jenkinsvm3"
 }
