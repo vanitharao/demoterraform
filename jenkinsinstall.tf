@@ -55,6 +55,7 @@ resource "azurerm_storage_account" "test" {
   }
 }
  
+ 
 
 
 resource "azurerm_storage_container" "test" {
