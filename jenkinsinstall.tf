@@ -81,7 +81,7 @@ resource "azurerm_virtual_machine" "test" {
     caching       = "ReadWrite"
     create_option = "FromImage"
   }
-
+ 
   os_profile {
     computer_name  = "hostname"
     admin_username = "testadmin"
