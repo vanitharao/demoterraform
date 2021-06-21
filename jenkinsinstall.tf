@@ -51,7 +51,7 @@ resource "azurerm_storage_account" "test" {
   account_replication_type = "LRS"
 
   tags = {
-    environment = "staging"
+    environment = "dev"
   }
 }
 
