@@ -1,7 +1,7 @@
 variable "rgname"{
 
 type = string
-default = "jenkinsRG11"
+default = "jenkinsRG123"
 }
 variable "subscription_id"{
     type = string
