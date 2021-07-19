@@ -27,7 +27,7 @@ default = "westus"
 
 variable "vnet"{
     type = string
-    default = "jenkinsvnet"
+    default = "jenkinsvnet3"
 }
 variable "subnet"{
     type = string
