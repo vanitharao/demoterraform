@@ -31,7 +31,7 @@ variable "vnet"{
 }
 variable "subnet"{
     type = string
-    default = "jenkinssubnet"
+    default = "jenkinssubnet2"
 }
 variable "network_interface"{
     type = string
