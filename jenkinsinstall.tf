@@ -1,5 +1,6 @@
 
 
+
 # We strongly recommend using the required_providers block to set the
 
 # Configure the Microsoft Azure Provider
