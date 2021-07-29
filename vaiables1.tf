@@ -9,7 +9,7 @@ variable "subscription_id"{
 }
 variable "tenant_id"{
     type = string
-    default = "a355a6cd-43f9-4090-87b8-1b639556f4a9"
+    default = "1d9d0a25-f140-4b4c-b35a-8d67d09f8431"
 }
 
 variable "client_secret"{
