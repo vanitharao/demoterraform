@@ -39,7 +39,7 @@ variable "network_interface"{
 }
 variable "storage_account"{
     type = string
-    default = "jenkinsstoragename5"
+    default = "jenkinstorage420"
 }
 
 variable "storage_container"{
