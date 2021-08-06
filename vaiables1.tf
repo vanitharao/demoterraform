@@ -44,7 +44,7 @@ variable "storage_account"{
 
 variable "storage_container"{
     type = string
-    default = "jenkinscontainername3"
+    default = "jenkinscontainer"
 }
 variable "virtual_machine"{
     type = string
